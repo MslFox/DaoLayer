@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      file: migrations/schema.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/fillCustomers.sql
+      relativeToChangelogFile: true
+  - include:
+      file: migrations/fillOrders.sql
+      relativeToChangelogFile: true

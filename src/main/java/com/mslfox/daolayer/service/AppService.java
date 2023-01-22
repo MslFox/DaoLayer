@@ -14,8 +14,8 @@ public class AppService {
 
     public String getProductNameByName(String name) {
         var resultList = repository.getProductName(name);
-        return resultList.isEmpty() ? name + " has no orders!" :
-                String.format("PRODUCTS IN %s'S ORDER:\n%s", name.toUpperCase(),
+        return resultList.isEmpty() ? name.toUpperCase() + " has no orders!" :
+                String.format("PRODUCTS IN %s ORDERS:\n%s", name.toUpperCase(),
                         String.join("\n", resultList));
     }
 }
